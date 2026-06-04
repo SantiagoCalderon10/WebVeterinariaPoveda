@@ -1,0 +1,751 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Centro Veterinario Poveda Conde — Clínica Veterinaria en Garzón, Huila
+    </title>
+    <link rel="icon" href="assets/logo.png" />
+    <meta
+      name="description"
+      content="Clínica veterinaria en Garzón, Huila. Atención médica, vacunación, cirugía y estética para tu mascota. Agenda tu cita hoy."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav id="navbar">
+      <a href="#" class="nav-logo"
+        >  <img src="assets/LogoPovedaConde.png" class="logo-nav" alt="Centro Veterinario Poveda Conde"/>
+
+        
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#equipo">Equipo</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#contacto" class="nav-cta">Cita</a></li>
+      </ul>
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-label="Menú"
+        onclick="toggleMenu()"
+      >
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero-left">
+        <div class="hero-badge">Atención veterinaria en Garzón, Huila</div>
+        <h1 class="hero-titulo">
+          Tu mascota merece<br />el mejor <em>cuidado</em>
+        </h1>
+        <p class="hero-subtitulo">
+          Clínica veterinaria con atención integral para perros, gatos y
+          animales de compañía. Medicina preventiva, cirugía y estética en el
+          corazón del Huila.
+        </p>
+        <div class="hero-botones">
+          <a href="#contacto" class="btn-primario">Agendar cita</a>
+          <a href="#servicios" class="btn-secundario">Ver servicios</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-numero"
+              ><!-- AÑOS -->
+              8+</span
+            >
+            <span class="stat-label">Años de experiencia</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-numero"
+              ><!-- PACIENTES -->
+              2K+</span
+            >
+            <span class="stat-label">Pacientes atendidos</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-numero"
+              ><!-- VETS -->
+              3</span
+            >
+            <span class="stat-label">Veterinarios expertos</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <!-- REEMPLAZAR CON: <img src="foto-clinica.jpg" style="width:100%;height:100%;object-fit:cover;"> -->
+        <img
+          src="assets/hero-img.png"
+          style="width: 100%; height: 100%; object-fit: cover"
+        />
+        <div class="hero-card-flotante">
+          <div class="card-texto">
+            <p>Consulta disponible</p>
+           
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="servicios" id="servicios">
+      <div class="servicios-header fade-up">
+        <div>
+          <span class="seccion-tag">Lo que hacemos</span>
+          <h2 class="seccion-titulo">Servicios veterinarios<br />integrales</h2>
+        </div>
+        <p class="seccion-subtitulo">
+          Cuidamos cada etapa de la vida de tu mascota con atención
+          personalizada y equipos modernos.
+        </p>
+      </div>
+      <div class="servicios-grid">
+        <div class="servicio-card fade-up">
+          <div class="servicio-icono">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-stethoscope-icon lucide-stethoscope"><path d="M11 2v2"/><path d="M5 2v2"/><path d="M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1"/><path d="M8 15a6 6 0 0 0 12 0v-3"/><circle cx="20" cy="10" r="2"/></svg>
+          </div>
+          <h3 class="servicio-nombre">Consulta general</h3>
+          <p class="servicio-desc">
+            Evaluación clínica completa, diagnóstico y tratamiento para mantener
+            la salud óptima de tu mascota en cada visita.
+          </p>
+        </div>
+        <div class="servicio-card fade-up">
+          <div class="servicio-icono">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-syringe-icon lucide-syringe"><path d="m18 2 4 4"/><path d="m17 7 3-3"/><path d="M19 9 8.7 19.3c-1 1-2.5 1-3.4 0l-.6-.6c-1-1-1-2.5 0-3.4L15 5"/><path d="m9 11 4 4"/><path d="m5 19-3 3"/><path d="m14 4 6 6"/></svg>
+          </div>
+          <h3 class="servicio-nombre">Vacunación y desparasitación</h3>
+          <p class="servicio-desc">
+            Planes de vacunación adaptados a la edad y estilo de vida de tu
+            mascota. Protección preventiva desde cachorro.
+          </p>
+        </div>
+        <div class="servicio-card fade-up">
+          <div class="servicio-icono">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-microscope-icon lucide-microscope"><path d="M6 18h8"/><path d="M3 22h18"/><path d="M14 22a7 7 0 1 0 0-14h-1"/><path d="M9 14h2"/><path d="M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2Z"/><path d="M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3"/></svg>
+          </div>
+          <h3 class="servicio-nombre">Laboratorio clínico</h3>
+          <p class="servicio-desc">
+            Análisis de sangre, orina y exámenes diagnósticos con resultados
+            rápidos para tomar decisiones acertadas.
+          </p>
+        </div>
+        <div class="servicio-card fade-up">
+          <div class="servicio-icono">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-activity-icon lucide-activity"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"/></svg>
+          </div>
+          <h3 class="servicio-nombre">Cirugía veterinaria</h3>
+          <p class="servicio-desc">
+            Procedimientos quirúrgicos con anestesia monitoreada,
+            esterilizaciones y cirugías de tejidos blandos con los mejores
+            estándares.
+          </p>
+        </div>
+        <div class="servicio-card fade-up">
+          <div class="servicio-icono">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-scissors-icon lucide-scissors"><circle cx="6" cy="6" r="3"/><path d="M8.12 8.12 12 12"/><path d="M20 4 8.12 15.88"/><circle cx="6" cy="18" r="3"/><path d="M14.8 14.8 20 20"/></svg>
+          </div>
+          <h3 class="servicio-nombre">Estética y peluquería</h3>
+          <p class="servicio-desc">
+            Baño, corte, secado y arreglo completo para que tu mascota luzca y
+            se sienta increíble. Atención con amor y paciencia.
+          </p>
+        </div>
+        <div class="servicio-card fade-up">
+          <div class="servicio-icono">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hospital-icon lucide-hospital"><path d="M12 7v4"/><path d="M14 21v-3a2 2 0 0 0-4 0v3"/><path d="M14 9h-4"/><path d="M18 11h2a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2h2"/><path d="M18 21V5a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16"/></svg>
+          </div>
+          <h3 class="servicio-nombre">Hospitalización</h3>
+          <p class="servicio-desc">
+            Área de recuperación equipada con monitoreo constante para que tu
+            mascota esté segura durante su proceso de sanación.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section id="nosotros">
+      <div class="nosotros">
+        <div class="nosotros-img fade-up">
+          <!-- REEMPLAZAR CON: <img src="foto-equipo.jpg" style="width:100%;height:100%;object-fit:cover;"> -->
+          <img
+            src="assets/quienesSomos-img.jpg"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+          <div class="nosotros-deco"></div>
+        </div>
+        <div class="nosotros-contenido fade-up">
+          <span class="seccion-tag">Quiénes somos</span>
+          <h2 class="seccion-titulo">
+            Una clínica construida<br />con <em>vocación</em>
+          </h2>
+          <p class="seccion-subtitulo">
+            <!-- PERSONALIZAR DESCRIPCIÓN -->
+            Nacimos en Garzón con una sola misión: brindar atención veterinaria
+            de calidad a las familias huilenses. Conocemos la región, entendemos
+            a nuestra comunidad y tratamos a cada paciente como si fuera propio.
+          </p>
+          <ul class="nosotros-lista">
+            <!-- PUEDES MODIFICAR ESTOS PUNTOS -->
+            <li>
+              Instalaciones modernas con equipos de diagnóstico actualizados
+            </li>
+            <li>
+              Equipo veterinario con formación especializada y experiencia
+              comprobada
+            </li>
+            <li>Atención personalizada con seguimiento post-consulta</li>
+            <li>Precios accesibles sin sacrificar calidad de atención</li>
+            <li>
+              Ubicados en el centro de Garzón, fácil acceso para toda la región
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EQUIPO -->
+    <section class="equipo" id="equipo">
+      <div class="equipo-header fade-up">
+        <span class="seccion-tag">Nuestro equipo</span>
+        <h2 class="seccion-titulo">Los que cuidan a los tuyos</h2>
+        <p class="seccion-subtitulo">
+          Profesionales apasionados, formados para dar lo mejor en cada
+          consulta.
+        </p>
+      </div>
+      <div class="equipo-grid">
+        <!-- VETERINARIO 1 — CAMBIAR DATOS -->
+        <div class="vet-card fade-up">
+          <div class="vet-foto">
+            <!-- REEMPLAZAR CON: <img src="vet1.jpg" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0;"> -->
+            <img
+              src="assets/vet1.png"
+              style="
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+              "
+            />
+          </div>
+          <h3 class="vet-nombre">Dr. Alejandro Poveda Conde</h3>
+          <p class="vet-cargo">Médico</p>
+          <p class="vet-bio">
+            <!-- BREVE BIO: especialidad, universidad, años de experiencia -->
+          </p>
+        </div>
+        <!-- VETERINARIO 2 — CAMBIAR DATOS -->
+        <div class="vet-card fade-up">
+          <div class="vet-foto">
+            <svg
+              width="48"
+              height="48"
+              viewBox="0 0 64 64"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              style="opacity: 0.4"
+            >
+              <circle cx="32" cy="20" r="12" stroke="#888" stroke-width="2" />
+              <path
+                d="M8 56c0-13.3 10.7-24 24-24s24 10.7 24 24"
+                stroke="#888"
+                stroke-width="2"
+              />
+            </svg>
+            <span style="font-size: 0.75rem; color: #aaa"
+              >Foto del veterinario</span
+            >
+          </div>
+          <h3 class="vet-nombre">
+            Dr: NOMBRE MEDICO
+            <!-- NOMBRE -->
+          </h3>
+          <p class="vet-cargo">Cirujana Veterinaria</p>
+          <p class="vet-bio"><!-- BREVE BIO --></p>
+        </div>
+        <!-- VETERINARIO 3 — CAMBIAR DATOS -->
+        <div class="vet-card fade-up">
+          <div class="vet-foto">
+            <svg
+              width="48"
+              height="48"
+              viewBox="0 0 64 64"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              style="opacity: 0.4"
+            >
+              <circle cx="32" cy="20" r="12" stroke="#888" stroke-width="2" />
+              <path
+                d="M8 56c0-13.3 10.7-24 24-24s24 10.7 24 24"
+                stroke="#888"
+                stroke-width="2"
+              />
+            </svg>
+            <span style="font-size: 0.75rem; color: #aaa"
+              >Foto del veterinario</span
+            >
+          </div>
+          <h3 class="vet-nombre">
+            Dr. NOMBRE MEDICO
+            <!-- NOMBRE -->
+          </h3>
+          <p class="vet-cargo">Especialista en Pequeños Animales</p>
+          <p class="vet-bio"><!-- BREVE BIO --></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section id="galeria">
+      <div class="fade-up" style="margin-bottom: 3rem">
+        <span class="seccion-tag">Galería</span>
+        <h2 class="seccion-titulo">Nuestras instalaciones<br />y momentos</h2>
+      </div>
+      <!-- REEMPLAZAR LOS DIV DE GALERÍA CON TUS FOTOS REALES -->
+      <!-- Ejemplo: <img src="foto1.jpg" style="width:100%;height:100%;object-fit:cover;"> dentro de cada .galeria-item -->
+      <div class="galeria-grid fade-up">
+        <div class="galeria-item">
+          <img
+            src="assets/hero-img.png"
+            style="
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              position: absolute;
+              top: 0;
+              left: 0;
+            "
+          />
+        </div>
+        <div class="galeria-item">
+          <img
+            src="assets/galeria2.jpg"
+            style="
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              position: absolute;
+              top: 0;
+              left: 0;
+            "
+          />
+        </div>
+        <div class="galeria-item">
+          <img
+            src="assets/galeria5.jpg"
+            style="
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              position: absolute;
+              top: 0;
+              left: 0;
+            "
+          />
+        </div>
+        <div class="galeria-item">
+          <img
+            src="assets/galeria3.jpg"
+            style="
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              position: absolute;
+              top: 0;
+              left: 0;
+            "
+          />
+        </div>
+        <div class="galeria-item">
+          <img
+            src="assets/galeria4.jpg"
+            style="
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              position: absolute;
+              top: 0;
+              left: 0;
+            "
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="testimonios" id="testimonios">
+      <div class="fade-up">
+        <span class="seccion-tag">Testimonios</span>
+        <h2 class="seccion-titulo">Lo que dicen<br />nuestros clientes</h2>
+      </div>
+      <!-- CAMBIAR POR TESTIMONIOS REALES DE CLIENTES -->
+      <div class="testimonios-grid">
+        <div class="testimonio-card fade-up">
+          <div class="estrellas">
+            <div class="estrella"></div>
+            <div class="estrella"></div>
+            <div class="estrella"></div>
+            <div class="estrella"></div>
+            <div class="estrella"></div>
+          </div>
+          <p class="testimonio-texto">
+            "Excelente atención, ya en casa con mi bebé recuperándose de la
+            cirugía, agradecida con la clinica por toda la atención y el amor
+            que le tuvieron a mi mascota super recomendada 😇…"
+          </p>
+          <div class="testimonio-autor">
+            <div class="autor-avatar">
+              <!-- INICIAL -->
+              M
+            </div>
+            <div>
+              <p class="autor-nombre">
+                <!-- NOMBRE CLIENTE -->
+                Maribel
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonio-card fade-up">
+          <div class="estrellas">
+            <div class="estrella"></div>
+            <div class="estrella"></div>
+            <div class="estrella"></div>
+            <div class="estrella"></div>
+            <div class="estrella"></div>
+          </div>
+          <p class="testimonio-texto">
+            "Trató a mi perrita de un tumor hepático, Me encanto su
+            profesionalismo, y sobre todo que antes de medicar hace examenes
+            sanguíneos y de más para saber así que va a tratar; no a lo loco
+            como suelen hacer en otros lados, le hizo seguimiento a mi mascota,
+            siempre muy atenta a mis dudas resolviéndolas."
+          </p>
+          <div class="testimonio-autor">
+            <div class="autor-avatar">J</div>
+            <div>
+              <p class="autor-nombre">
+                <!-- NOMBRE -->
+                Jessica Ospina
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonio-card fade-up">
+          <div class="estrellas">
+            <div class="estrella"></div>
+            <div class="estrella"></div>
+            <div class="estrella"></div>
+            <div class="estrella"></div>
+            <div class="estrella"></div>
+          </div>
+          <p class="testimonio-texto">
+            "Excelente servicio. Todas son muy profesionales y honestas. La gata
+            de mi mamá estaba muy enferma y lamentablemente falleció, sin
+            embargo, en la veterinaria hicieron todo lo que pudieron por ella y
+            devolvieron el dinero de los servicios que no se usaron. Mil
+            gracias!"
+          </p>
+          <div class="testimonio-autor">
+            <div class="autor-avatar">C</div>
+            <div>
+              <p class="autor-nombre">
+                <!-- NOMBRE -->
+                Camila Cediel
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+      <div class="contacto-grid">
+        <div class="contacto-info fade-up">
+          <span class="seccion-tag">Contáctanos</span>
+          <h2 class="seccion-titulo">Agenda la cita<br />de tu mascota</h2>
+          <p class="seccion-subtitulo">
+            Estamos en Garzón, Huila. Escríbenos o llámanos, con gusto te
+            atendemos.
+          </p>
+          <div class="contacto-items">
+            <div class="contacto-item">
+              <div class="contacto-item-icono">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="contacto-item-texto">
+                <p>Dirección</p>
+                <!-- CAMBIAR DIRECCIÓN -->
+                <p>Calle. 9 #8-7, Garzón, Huila</p>
+              </div>
+            </div>
+            <div class="contacto-item">
+              <div class="contacto-item-icono">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone-icon lucide-phone"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+              </div>
+              <div class="contacto-item-texto">
+                <p>Teléfono / WhatsApp</p>
+                <!-- CAMBIAR TELÉFONO -->
+                <p>+57 317 844 5228</p>
+              </div>
+            </div>
+            <div class="contacto-item">
+              <div class="contacto-item-icono">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+              </div>
+              <div class="contacto-item-texto">
+                <p>Correo electrónico</p>
+                <!-- CAMBIAR CORREO -->
+                <p>contacto@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="horario-tabla">
+            <p>Horario de atención</p>
+            <!-- CAMBIAR HORARIOS SEGÚN EL NEGOCIO -->
+            <div class="horario-fila">
+              <span>Lunes – Viernes</span
+              ><span>7:30 am – 12:00 pm / 2:00 pm – 7:00 pm</span>
+            </div>
+            <div class="horario-fila">
+              <span>Sábados</span><span>7:30 am – 3:00 pm</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- FORMULARIO — CONECTAR CON FORMSPREE: cambiar ACTION por tu endpoint -->
+        <div class="form-contacto fade-up">
+          <h3 class="form-titulo">Envíanos un mensaje</h3>
+          <!-- REEMPLAZAR action="..." CON TU ENDPOINT DE FORMSPREE -->
+          <!-- Ejemplo: action="https://formspree.io/f/xxxxxxxx" -->
+          <form action="https://formspree.io/f/mvznoaea" method="POST">
+            <div class="form-fila">
+              <div class="form-grupo">
+                <label for="nombre">Tu nombre</label>
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  placeholder="Ana Gómez"
+                  required
+                />
+              </div>
+              <div class="form-grupo">
+                <label for="telefono">WhatsApp / Teléfono</label>
+                <input
+                  type="number"
+                  id="telefono"
+                  name="telefono"
+                  placeholder="300 000 0000"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-grupo">
+              <label for="mascota">¿Qué tipo de mascota tienes?</label>
+              <select id="mascota" name="mascota" required>
+                <option value="" disabled selected>
+                  Selecciona una opción
+                </option>
+                <option value="perro">Perro</option>
+                <option value="gato">Gato</option>
+                <option value="ave">Ave</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+            <div class="form-grupo">
+              <label for="servicio">Servicio de interés</label>
+              <select id="servicio" name="servicio" required>
+                <option value="" disabled selected>¿Qué necesitas?</option>
+                <option value="consulta">Consulta general</option>
+                <option value="vacunacion">Vacunación</option>
+                <option value="cirugia">Cirugía</option>
+                <option value="estetica">Estética / Peluquería</option>
+                <option value="laboratorio">Laboratorio</option>
+                <option value="urgencia">Urgencia</option>
+              </select>
+            </div>
+            <div class="form-grupo">
+              <label for="mensaje">Cuéntanos más (opcional)</label>
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                placeholder="Describe brevemente el motivo de la consulta..."
+              ></textarea>
+            </div>
+            <button type="submit" class="btn-form">Enviar mensaje →</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAPA -->
+    <!-- REEMPLAZAR ESTE BLOQUE CON EL EMBED DE GOOGLE MAPS DE LA DIRECCIÓN REAL -->
+    <!-- Ir a Google Maps → Compartir → Insertar mapa → copiar el <iframe> aquí -->
+    <div class="mapa-section">
+      <div class="mapa-placeholder">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.8841373264954!2d-75.62622034757692!3d2.197512169979745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e24d931efebc8b1%3A0x8c79cd3dc6fb41ea!2sCentro%20Veterinario%20Poveda%20Conde!5e0!3m2!1ses-419!2sco!4v1780523472028!5m2!1ses-419!2sco"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div>
+        <div class="footer-logo">
+          <img
+            src="assets/LogoPovedaConde.png"
+            width="150"
+            alt="PovedaConde Logo"
+          />
+        </div>
+        <!-- CAMBIAR DESCRIPCIÓN -->
+        <p class="footer-desc">
+          En el corazón de Garzón, el Centro Veterinario Poveda Conde se destaca
+          por su compromiso con la salud y bienestar de nuestros animales. Con
+          atención especializada y un enfoque humano, ofrecen un cuidado
+          excepcional.
+        </p>
+        <div class="footer-social">
+          <!-- CAMBIAR LINKS A REDES SOCIALES REALES -->
+
+          <a href="https://www.facebook.com/profile.php?id=100063558461050" class="social-btn" aria-label="Facebook"             target="_blank"
+>
+            <svg
+              role="img"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://www.instagram.com/veterinariapovedaconde?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            class="social-btn"
+            aria-label="Instagram"
+            target="_blank"
+          >
+            <svg
+              role="img"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
+              />
+            </svg>
+          </a>
+
+          <a
+            href="https://wa.me/573178445228"
+            class="social-btn"
+            aria-label="WhatsApp"
+            target="_blank"
+          >
+            <svg
+              role="img"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.533 5.854L.057 23.986l6.305-1.454A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.373l-.36-.213-3.72.858.882-3.62-.234-.372A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="#servicios">Consulta general</a></li>
+          <li><a href="#servicios">Vacunación</a></li>
+          <li><a href="#servicios">Cirugía</a></li>
+          <li><a href="#servicios">Laboratorio</a></li>
+          <li><a href="#servicios">Estética</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Clínica</h4>
+        <ul>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#equipo">Equipo</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <!-- CAMBIAR AÑO Y NOMBRE REAL DE LA CLÍNICA -->
+        <span
+          >© 2026 Centro Veterinario Poveda Conde — Garzón, Huila.
+          Calderón</span
+        >
+        <span
+          >Diseño web por
+          Santiago Calderón</span
+        >
+      </div>
+    </footer>
+
+    <!-- WHATSAPP FLOTANTE -->
+    <!-- CAMBIAR EL NÚMERO EN EL HREF: https://wa.me/57XXXXXXXXXX -->
+    <a
+      href="https://wa.me/573178445228?text=Hola,%20quiero%20agendar%20una%20cita%20para%20mi%20mascota"
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener"
+      aria-label="Contactar por WhatsApp"
+    >
+      <svg
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"
+        />
+        <path
+          d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.533 5.854L.057 23.986l6.305-1.454A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.373l-.36-.213-3.72.858.882-3.62-.234-.372A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"
+        />
+      </svg>
+      Escribir por WhatsApp
+    </a>
+
+    <script src="index.js"></script>
+  </body>
+</html>
